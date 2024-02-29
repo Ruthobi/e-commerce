@@ -1,0 +1,132 @@
+<section id="product">
+<div class="container">
+<div class="row">
+<div class="col-12">
+     <div class="productHeading text-center" >
+<h2 style="color: blue;" class="mb-3">Exclusive Products</h2>
+
+<ul class="list-unstyled d-flex justify-content-center">
+    <li><a href="#" class="m-4 text-decoration-none text-danger fw-semibold">New Arrival</a></li>
+    <li><a href="#" class="m-4 text-decoration-none fw-semibold text-black">Best Sellers</a></li>
+    <li><a href="#" class="m-4 text-decoration-none fw-semibold text-black">Featured</a></li>
+    <li><a href="#" class="m-4 text-decoration-none fw-semibold text-black">Special Offer</a></li>
+  </ul>
+ </div>
+</div>
+
+<div class="col-12">
+<div class="row mt-3">
+<div class="col-lg-3 pt-1" *ngFor="let product of productList"> 
+<div class="box-shadow">
+ <div class="card">
+<img class="img-fluid" style="height: 200px;" [src]="product.productImageUrl" class="card-img-top" alt="....">
+   <div class="card-body">
+    <h5 class="card-title">{{ generateShortName(product.productName) }}</h5>
+<p class="card-text"><span class="text-danger fw-semibold me-2">{{product.productPrice}}</span><del>{{product.productPrice}}</del>
+<span class="text-success ms-2">35% off</span></p>
+<span><i class="fas fa-star m-0" style="color: #f1f50f"></i></span>
+<span><i class="fas fa-star m-0" style="color: #f1f50f"></i></span>
+<span><i class="fas fa-star m-0" style="color: #f1f50f"></i></span>
+<span><i class="fas fa-star m-0" style="color: #f1f50f"></i></span>
+<div class="row">
+    <div class="col-6">
+        <i class="fas fa-star-half-alt m-0" style="color: yellowgreen;"></i>
+        <span class="text-muted">(21)</span>
+    </div>
+<div class="col-6 text-end">
+    <button class="btn btn-sm btn-primary" (click)="addItemToCart(product.productId)">Add to cart</button>
+</div>
+</div>
+
+ </div>
+</div>
+</div>
+</div>
+<div class="col-lg-3">
+ <div class="box-shadow">
+ <div class="card"> 
+ <img src="" alt="">
+<div class="card-body">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- <h5 class="card-title"></h5> -->
+    <!-- <p class="card-text"><span class="text-danger fw-semibold me-2">55,000</span><del>45,000</del> -->
+    <!-- <span class="text-success ms-2">25% off</span></p> -->
+    <!-- <span><i class="fas fa-star m-0" style="color: #f1f50f"></i></span> -->
+    <!-- <span><i class="fas fa-star m-0" style="color: #f1f50f"></i></span> -->
+    <!-- <span><i class="fas fa-star m-0" style="color: #f1f50f"></i></span> -->
+    <!-- <span><i class="fas fa-star m-0" style="color: #f1f50f"></i></span> -->
+    <!-- <span><i class="fas fa-star-half-alt m-0" style="color: #f1f50f"></i></span> -->
+    <!-- <span class="text-muted">(15)</span> -->
+<!-- </div> -->
+<!-- <div class="col-6 text-end"> -->
+    <!-- <button class="btn btn-sm btn-primary" (click)="addItemToCart(product.productId)">Add to cart</button> -->
+ <!-- </div> -->
+ <!-- </div> -->
+ <!-- </div> -->
+<!-- </div> -->
+<!-- <div class="col-lg-3"> -->
+<!-- <div class="box-shadow"> -->
+<!-- <div class="card"> -->
+    <!-- <img src="" alt=""> -->
+ <!-- <h6 class="bg-warning text-white w-25 text-center">New</h6> -->
+<!-- <div class="card-body"> -->
+    <!-- <h6 class="card-title">Women Full Sleeve Dress</h6> -->
+    <!-- <h6 class="card-text"><span class="text-danger fw-semibold me-2">68,000</span><del>99,000</del> -->
+    <!-- <span class="text-success ms-2">25% off</span></h6> -->
+    <!-- <span><i class="fas fa-star m-0" style="color: #f1f50f"></i></span> -->
+    <!-- <span><i class="fas fa-star m-0" style="color: #f1f50f"></i></span> -->
+    <!-- <span><i class="fas fa-star m-0" style="color: #f1f50f;"></i></span> -->
+    <!-- <span><i class="fas fa-star m-0" style="color: #f1f50f;"></i></span> -->
+    <!-- <span><i class="fas fa-star-half-alt m-0" style="color: #f1f50f"></i></span> -->
+    <!-- <span class="text-muted">(25)</span> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- <div class="col-lg-3"> -->
+<!-- <div class="box-shadow"> -->
+ <!-- <div class="card">  -->
+<!-- <img src="" alt=""> -->
+<!-- <div class="card-body"> -->
+    <!-- <h5 class="card-title">Light Blue Shirt</h5> -->
+    <!-- <p class="card-text"><span class="text-danger fw-semibold me-2">69,000</span><del>89,000</del> -->
+    <!-- <span class="text-success ms-2">25% off</span></p> -->
+    <!-- <span><i class="fas fa-star m-0" style="color: #f1f50f"></i></span> -->
+    <!-- <span><i class="fas fa-star m-0" style="color: #f1f50f"></i></span> -->
+    <!-- <span><i class="fas fa-star m-0" style="color: #f1f50f;"></i></span> -->
+    <!-- <span><i class="fas fa-star m-0" style="color: #f1f50f;"></i></span> -->
+    <!-- <span><i class="fas fa-star-half-alt m-0" style="color: #f1f50f"></i></span> -->
+    <!-- <span class="text-muted">(22)</span> -->
+</div>
+ </div>
+ </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
